@@ -1,0 +1,32 @@
+{
+  "name": "MERN Stack with Redis and MySQL Development",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        }
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "mongodb.mongodb-vscode",
+        "ms-azuretools.vscode-docker",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "mikestead.dotenv",
+        "formulahendry.auto-rename-tag",
+        "redhat.vscode-yaml",
+        "cweijan.vscode-mysql-client2"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 5000, 27017, 6379, 3306],
+  "postCreateCommand": "npm install -g nodemon@3.0.2 typescript@5.4.5 ts-node@10.9.2 concurrently@8.2.2"
+}
