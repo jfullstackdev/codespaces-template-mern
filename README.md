@@ -29,10 +29,28 @@ you will need to:
 
 ## Getting Started
 
+You can get started with this template in several ways:
+
+- **Open a Codespace directly from GitHub:**
+  - If this repository is public, you can click the "Code" button on the
+    repo page and select "Create codespace on main" (or another branch).
+    No need to fork or clone first — GitHub will automatically provision a
+    Codespace with the repo contents and devcontainer setup.
+- **Fork the repository:**
+  - If you want your own copy of the repository (for making changes or
+    keeping your own Codespace), fork it on GitHub, then open a Codespace
+    from your fork.
+- **Manual setup using the devcontainer:**
+  - You may also copy the `.devcontainer` folder/configuration to another
+    project or environment to reuse the same development setup. This is
+    only recommended if you know what you are doing — your project may not
+    work at all if the environment is not compatible or is missing
+    required services.
+
 ### Installation
 
-1. Clone the repository
-2. Install dependencies:
+1. If you forked, cloned, or opened the repository in a Codespace, install
+   dependencies:
 
 ```bash
 npm run install-all
