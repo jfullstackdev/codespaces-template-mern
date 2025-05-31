@@ -60,6 +60,8 @@ To run only the server:
 npm run server
 ```
 
+**Note (Codespaces Ports):** There is a known GitHub Codespaces issue where port 3000 may not serve even when set to Public — so open the Ports panel, locate port 3000, toggle Public/Private, and refresh your browser or preview.
+
 ### Building for Production
 
 To build the client:
