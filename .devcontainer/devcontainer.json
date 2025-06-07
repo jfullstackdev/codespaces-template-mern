@@ -3,6 +3,11 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  
   "customizations": {
     "vscode": {
       "settings": {
@@ -27,6 +32,8 @@
       ]
     }
   },
+  
   "forwardPorts": [3000, 5000, 27017, 6379, 3306],
-  "postCreateCommand": "npm install -g nodemon@3.0.2 typescript@5.4.5 ts-node@10.9.2 concurrently@8.2.2"
+  "postCreateCommand": "npm install -g nodemon@3.0.2 typescript@5.4.5 ts-node@10.9.2 concurrently@8.2.2",
+  "remoteUser": "node"
 }

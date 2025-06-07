@@ -1,5 +1,6 @@
-FROM node:20
+FROM mcr.microsoft.com/devcontainers/javascript-node:20
 
+# Install MySQL client, Redis CLI, mongosh, and MongoDB database tools
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         ca-certificates \
@@ -23,6 +24,8 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends mongodb-database-tools && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+
+RUN npm install -g nodemon@3.0.2 typescript@5.4.5 ts-node@10.9.2 concurrently@8.2.2
 
 ENV SHELL=/bin/bash
 WORKDIR /workspace
