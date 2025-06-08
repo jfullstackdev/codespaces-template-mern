@@ -1,6 +1,6 @@
 # Codespaces Template for MERN
 
-![image](https://github.com/user-attachments/assets/c675aa71-4874-4c19-916c-89fa756996d7)
+![452715534-c675aa71-4874-4c19-916c-89fa756996d7-final](https://github.com/user-attachments/assets/6ba41924-8447-481b-b005-ff8f44c86b1e)
 
 a Codespaces Template for MERN with MongoDB, Express, React (via Vite), and Node.js
 
